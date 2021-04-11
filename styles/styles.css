@@ -1,3 +1,41 @@
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+    /* criar variáveis em css: no root. */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* para limitar os elementos internos à borda da caixa */
+}
+
 body {
-    background-color: lightblue;
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container {
+    display: flex;
+    /* permite o uso de flexbox. Deixa flex-direction: row; */
+    align-items: center;
+    justify-content: space-between;
+    /* espaço entre h2 e nav (tags filhas do container) */
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
 }
