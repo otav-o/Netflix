@@ -106,3 +106,10 @@ header nav a:hover {
     width: 60%;
     /* para não ocupar toda a tela */
 }
+
+/* carousel */
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
