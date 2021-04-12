@@ -95,3 +95,14 @@ header nav a:hover {
 .botao i {
     margin-right: 10px;
 }
+
+.container {
+    margin-left: 30px;
+    margin-right: 20px;
+    /* vantagem da classe wrapper é não ter que definir isso para todos os elementos */
+}
+
+.filme-principal .container {
+    width: 60%;
+    /* para não ocupar toda a tela */
+}
