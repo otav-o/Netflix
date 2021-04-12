@@ -11,9 +11,11 @@
     /* para limitar os elementos internos à borda da caixa */
 }
 
+/* elementos base */
 body {
     background-color: var(--preta);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container {
@@ -38,4 +40,29 @@ header nav a {
 
 header nav a:hover {
     color: #fff;
+}
+
+/* filme principal */
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5) 100%), url('../img/imagem-capa.jpg');
+    height: 490px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* centraliza em relação ao eixo principal (column) */
+
+    align-items: flex-start;
+    /* refere-se ao lado esquerdo da linha */
+    /* justify-content e align-items se invertem. Lembrar que o primeiro sempre é em relação ao flex-direction; */
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+}
+
+.titulo {
+    font-size: 40px;
 }
